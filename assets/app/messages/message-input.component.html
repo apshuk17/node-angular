@@ -1,0 +1,12 @@
+<div class="col-md-8 col-md-offset-2">
+    <form #myForm="ngForm" (ngSubmit) = "onSubmit(myForm)">
+        <div class="form-group">
+            <label for="content">Content</label>
+            <input type="text" id="content" class="form-control"
+             name="content" [ngModel]="message?.content" required>
+        </div>
+        <button class="btn btn-danger" type="button" (click) = "onClear(myForm)">Clear</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+    
+</div>
